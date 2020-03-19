@@ -34,7 +34,7 @@
 						$z(".btn-navbar").click(function (){
 							$z("#searchform").toggle();
 						});
-					</script> <form id="searchform" name="searchengine1" onsubmit="return search1()" action="suche.html" method="get" class="pull-right"> <input id="searchfield" class="search-query pull-right" type="text" name="q" value="Suchbegriff" onfocus="if(this.value=='Suchbegriff'){this.value=''}" onblur="if(this.value==''){this.value='Suchbegriff'}"> <input id="searchbutton" type="image" name="submit" src="assets/stock-images/magnifier.png" alt="searchbutton"> </form> <a class="brand" href="index.html"><img src="assets/logo.png" width="45" height="46" alt="index.html"></a> <div class="nav-collapse collapse"> <ul class="zpmarkactive default nav nav-pills touchhovermenu clickhovermenu out" data-breakpointmobilemenu="979" data-trianglemode="true"><li class="zpnodefaults dropdown"><a href="index.html">Startseite</a></li><li class="zpnodefaults haschilds dropdown"><a href="Apps.html">Spiele &amp; Apps</a><ul class="dropdown-menu"><li class="zpnodefaults dropdown"><a href="dga.html">DgA</a></li></ul></li><li class="zpnodefaults dropdown"><a href="kontakt.html">Kontakt</a></li></ul> <script>
+					</script> <form id="searchform" name="searchengine1" onsubmit="return search1()" action="suche.html" method="get" class="pull-right"> <input id="searchfield" class="search-query pull-right" type="text" name="q" value="Suchbegriff" onfocus="if(this.value=='Suchbegriff'){this.value=''}" onblur="if(this.value==''){this.value='Suchbegriff'}"> <input id="searchbutton" type="image" name="submit" src="assets/stock-images/magnifier.png" alt="searchbutton"> </form> <a class="brand" href="index.html"><img src="assets/logo.png" width="45" height="46" alt="index.html"></a> <div class="nav-collapse collapse"> <ul class="zpmarkactive default nav nav-pills touchhovermenu clickhovermenu out" data-breakpointmobilemenu="979" data-trianglemode="true"><li class="zpnodefaults dropdown"><a href="index.html">Startseite</a></li><li class="zpnodefaults haschilds dropdown"><a href="Apps.html">Spiele &amp; Apps</a><ul class="dropdown-menu"><li class="zpnodefaults haschilds dropdown-submenu"><a href="mineplayz-launcher.html">Launcher</a><ul class="dropdown-menu"><li class="zpnodefaults dropdown"><a href="https://link-to.net/11509/Launcher">Download</a></li></ul></li><li class="zpnodefaults dropdown"><a href="dga.html">DgA</a></li></ul></li><li class="zpnodefaults dropdown"><a href="kontakt.html">Kontakt</a></li></ul> <script>
 $z(document).ready(function(){
 	// we find the active page's a-tag and then walk upwards the dom marking the respective parent li as active/open
 	$z('ul.zpmarkactive.default li a.active').parents('li').each(function(index){
@@ -111,55 +111,57 @@ $z(document).ready(function(){
 				
 			}
 			if ( c != null && c != "" ) 		{
-			  var aName = new Array(10);
-			  var aDescription = new Array(10);
-			  var aURL = new Array(10);
-			  var aKeys = new Array(10);
+			  var aName = new Array(12);
+			  var aDescription = new Array(12);
+			  var aURL = new Array(12);
+			  var aKeys = new Array(12);
 				
 						aName[0] = "";
 						aDescription[0] = "";
 						aURL[0] = "";
 						aKeys[0] = "";
 					
-						aName[1] = "";
-						aDescription[1] = "";
-						aURL[1] = "";
-						aKeys[1] = "";
+ 
+						aName[1] = "Startseite";
+						aDescription[1] = "Dies ist die offiziele Website von Mineplayz und Mineplayz Entertainment!";
+						aURL[1] = "index.html";
+						aKeys[1] = "startseite mineplayz | mineplayz.ddns.net dies ist die offiziele website von und entertainment mineplayz spiele apps";
+				
+ 
+						aName[2] = "Launcher";
+						aDescription[2] = "Mineplayz Launcher&#x2F;Appstore erm&#246;glicht es dir alle Spiele von Mineplayz und Mineplayz Entertainment, offline und kostenlos zu spielen, Spiele fr&#252;her zu spielen, Statistiken zu synchronisieren und viele andere extra Funktionen";
+						aURL[2] = "mineplayz-launcher.html";
+						aKeys[2] = "launcher mineplayz-launcher&#x2F;appstore | mineplayz mineplayz.ddns.net launcher&#x2F;appstore ermöglicht es dir alle spiele von und entertainment offline kostenlos zu spielen früher statistiken synchronisieren viele andere extra funktionen mineplayz-launcher spiel download (klicke hier um installieren) https:&#x2F;&#x2F;link-to.net&#x2F;11509&#x2F;launcher optionen farben inaktiv hover";
+				
+						aName[3] = "";
+						aDescription[3] = "";
+						aURL[3] = "";
+						aKeys[3] = "";
 					
  
-						aName[2] = "DgA";
-						aDescription[2] = "DgA ist ein Online Multiplayer Spiel, entwickelt von Mineplayz, in welchem du in einer 2D-Welt gegen deine Freunde und andere Spieler k&#228;mpfen kannst!";
-						aURL[2] = "dga.html";
-						aKeys[2] = "dga | mineplayz mineplayz.ddns.net ist ein online multiplayer spiel entwickelt von in welchem du einer 2d-welt gegen deine freunde und andere spieler kämpfen kannst entertainment spielen (klicke hier um deinem browser zu spielen) https:&#x2F;&#x2F;mineplayz.github.io&#x2F;youvstuber&#x2F; optionen farben inaktiv hover";
+						aName[4] = "Spiele & Apps";
+						aDescription[4] = "Hier findest du alle Spiele und Apps von Mineplayz und Mineplayz Entertainment!";
+						aURL[4] = "Apps.html";
+						aKeys[4] = "spiele & apps | mineplayz mineplayz.ddns.net hier findest du alle und von entertainment dga in kannst gegen deine freunde oder andere spieler in einer kleinen 2d welt antreten das spiel ist momentan über den browser spielbar somit wird kein download zum spielen benötigt seite „dga“ optionen farben inaktiv hover";
 				
  
-						aName[3] = "Startseite";
-						aDescription[3] = "Dies ist die offiziele Website von Mineplayz und Mineplayz Entertainment!";
-						aURL[3] = "index.html";
-						aKeys[3] = "startseite mineplayz | mineplayz.ddns.net dies ist die offiziele website von und entertainment mineplayz spiele apps";
-				
-						aName[4] = "";
-						aDescription[4] = "";
-						aURL[4] = "";
-						aKeys[4] = "";
-					
- 
-						aName[5] = "Spiele & Apps";
-						aDescription[5] = "Hier findest du alle Spiele und Apps von Mineplayz und Mineplayz Entertainment!";
-						aURL[5] = "Apps.html";
-						aKeys[5] = "spiele & apps | mineplayz mineplayz.ddns.net hier findest du alle und von entertainment dga in kannst gegen deine freunde oder andere spieler in einer kleinen 2d welt antreten das spiel ist momentan über den browser spielbar somit wird kein download zum spielen benötigt seite „dga“ optionen farben inaktiv hover";
+						aName[5] = "DgA";
+						aDescription[5] = "DgA ist ein Online Multiplayer Spiel, entwickelt von Mineplayz, in welchem du in einer 2D-Welt gegen deine Freunde und andere Spieler k&#228;mpfen kannst!";
+						aURL[5] = "dga.html";
+						aKeys[5] = "dga | mineplayz mineplayz.ddns.net ist ein online multiplayer spiel entwickelt von in welchem du einer 2d-welt gegen deine freunde und andere spieler kämpfen kannst entertainment spielen (klicke hier um deinem browser zu spielen) https:&#x2F;&#x2F;link-to.net&#x2F;11509&#x2F;youvstuber optionen farben inaktiv hover";
 				
  
-						aName[6] = "Kontakt";
-						aDescription[6] = "Kontakt";
-						aURL[6] = "kontakt.html";
-						aKeys[6] = "kontakt | mineplayz mineplayz.ddns.net entertainment hier kannst du uns kontaktieren e-mail formular";
+						aName[6] = "Download";
+						aDescription[6] = "";
+						aURL[6] = "https://link-to.net/11509/Launcher";
+						aKeys[6] = "download";
 				
-						aName[7] = "";
-						aDescription[7] = "";
-						aURL[7] = "";
-						aKeys[7] = "";
-					
+ 
+						aName[7] = "Kontakt";
+						aDescription[7] = "Kontakt";
+						aURL[7] = "kontakt.html";
+						aKeys[7] = "kontakt | mineplayz mineplayz.ddns.net entertainment hier kannst du uns kontaktieren e-mail formular";
+				
 						aName[8] = "";
 						aDescription[8] = "";
 						aURL[8] = "";
@@ -169,6 +171,16 @@ $z(document).ready(function(){
 						aDescription[9] = "";
 						aURL[9] = "";
 						aKeys[9] = "";
+					
+						aName[10] = "";
+						aDescription[10] = "";
+						aURL[10] = "";
+						aKeys[10] = "";
+					
+						aName[11] = "";
+						aDescription[11] = "";
+						aURL[11] = "";
+						aKeys[11] = "";
 					
 	 
 			  var kw = c;
@@ -216,7 +228,7 @@ $z(document).ready(function(){
 				}
 				var nFound = 0;
 				var foundWords = 0;
-				for(a=0; a<10; a++) //Felder hochzählen
+				for(a=0; a<12; a++) //Felder hochzählen
 				{
 					foundWords = 0;
 					for (y=0; y<NumberOfWords; y++) //jedes Wort testen
